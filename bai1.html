@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ độ C sang độ F</title>
+</head>
+<body>
+Nhập số: <input type="number" id="input">
+    <p>From</p>
+    <select id="from">
+    <option value="c">Độ C</option>
+    <option value="f">Độ F</option>
+    </select>
+    <p>To</p>
+    <select id="to">
+    <option value="f">Độ F</option>
+    <option value="c">Độ C</option>
+    </select>
+    <button onclick="tinh()">Tính</button>
+    <p id="result">Kết quả hiện ở đây</p>
+<script>
+function tinh() {
+    let a=document.getElementById('input').value;
+    let b=document.getElementById('from').value;
+    let c=document.getElementById('to').value;
+    if (b=='c'){
+        if (c=='f'){
+            b=a * (9/5) +32;
+            document.getElementById('result').innerText ="kq la " + b;
+        }
+    }
+    else{
+        c = a/ (9/5)-32;
+        document.getElementById('result').innerText ="kq la " + c;
+    }
+}
+</script>
+</body>
+</html>

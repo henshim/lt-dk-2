@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt('Nhập a: ');
+    let b=+prompt('Nhập b: ');
+    let c=+prompt('nhap c: ');
+    debugger
+    if (a==0){
+        alert('Đây là phương trình bậc 1');
+    }else {
+        let delta=b*b-4*a*c
+        if (delta<0){
+            alert('Đây là phương trình vô nghiệm');
+        }else if (delta==0){
+            alert('Đây là phương trình có nghiệm kép ' + (-b/(2*a)));
+        }else {
+            let x1=+(-b+Math.sqrt(delta))/(2*a);
+            let x2=+(-b-Math.sqrt(delta))/(2*a);
+            alert("Đây là phương trình có 2 nghiệm phân biệt " + "</br>" + "x1 là " + x1 +"</br>"
+                                                               +"x2 là " + x2);
+        }
+    }
+</script>
+</body>
+</html>

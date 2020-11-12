@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số tiền tháng này</p>
+<input type="number" id="input">
+<button onclick="output()">Tính</button>
+<script>
+    function output(){
+        let tax=document.getElementById('input').value;
+        let vnd;
+        if (tax<5.000000){
+            vnd=(tax*(5/100))/100;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (tax<10.000000){
+            vnd=(tax*(15/100))/100;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (tax<32.000000){
+            vnd=(tax*(20/10))/100;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (tax<52.000000){
+            vnd=(tax*(25/100))/100;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (tax<80.000000){
+            vnd=(tax*(30/10))/100;
+            alert("Số tiền phải trả: " +vnd);
+        }else{
+            vnd=(tax*(35/100))/100;
+            alert("Số tiền phải trả: " +vnd)
+        }
+    }
+</script>
+</body>
+</html>

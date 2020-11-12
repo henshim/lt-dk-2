@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số điện đã sử dụng tháng này</p>
+<input type="number" id="input">
+<button onclick="output()">Tính</button>
+<script>
+    function output(){
+        let kwh=document.getElementById('input').value;
+        let vnd;
+        if (kwh<50){
+            vnd=kwh*1678;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (kwh<100){
+            vnd=kwh*1734;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (kwh<200){
+            vnd=kwh*2014;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (kwh<300){
+            vnd=kwh*2536;
+            alert("Số tiền phải trả: " +vnd);
+        } else if (kwh<400){
+            vnd=kwh*2834;
+            alert("Số tiền phải trả: " +vnd);
+        }else{
+            vnd=kwh*2927;
+            alert("Số tiền phải trả: " +vnd)
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Nhập 3 cạnh</h2>
+<input type="text" id="a"><br>
+<input type="text" id="b"><br>
+<input type="text" id="c"><br>
+<button id="t" onclick="show()">kiểm tra</button>
+<script>
+    function show(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+    if(a>0 && b>0 && c>0 && a+b>c && b+c>a && a+c>b){
+        document.write('Đây là tam giác');
+    }else {
+        alert("đây ko phải là tam giác nhập lại");
+    }}
+</script>
+</body>
+</html>
